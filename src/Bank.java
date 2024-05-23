@@ -133,13 +133,14 @@ public class Bank {
     }
 
     public User getUserById(int id) {
+        User user = null;
         for (int i = 0; i < users.length; i++) {
             if (users[i] != null && users[i].getId() == id) {
-                System.out.println(users[i].toString());
+                  user =users[i];
             }
 
         }
-        return null;
+        return user;
     }
 
 

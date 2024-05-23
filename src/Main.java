@@ -60,7 +60,8 @@ public class Main {
     public static void showUserById() {
         System.out.println("Axtardiginiz  Id-ni daxil edin :");
         int id = new Scanner(System.in).nextInt();
-        bank.getUserById(id);
+        User user=bank.getUserById(id);
+        System.out.println(user.toString());
     }
 
 }
